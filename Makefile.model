@@ -1,0 +1,17 @@
+
+CFLAGS=
+
+all: .%unit%.c
+	gcc $(CFLAGS) .%unit%.c -o %unit%
+
+debug: CFLAGS += -g
+debug: all	
+
+clean-no-exe:
+	rm .%unit%.c
+	rm Makefile
+
+clean:
+	rm %unit%
+	rm .%unit%.c
+	rm Makefile

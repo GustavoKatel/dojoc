@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+%return_type% %unit%( %params%  )
+{
+
+	return %default_ret%;
+}
+
